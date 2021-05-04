@@ -27,7 +27,7 @@
 #include <string.h>
 #include <string>
 #include "jwt/allocators.h"
-#include "jwt/json.hpp"
+#include <nlohmann/json.hpp>
 #include "jwt/jwt_error.h"
 
 using json = nlohmann::json;

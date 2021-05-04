@@ -11,6 +11,7 @@ LIST (APPEND CMAKE_MODULE_PATH "${TOOLS_DIRECTORY}/cmake/doxygen")
 INCLUDE(GetGitRevisionDescription)
 INCLUDE(cpplint)
 INCLUDE(UseDoxygen)
+INCLUDE(GNUInstallDirs)
 
 get_git_head_revision(GIT_REFSPEC GIT_SHA1)
 git_get_exact_tag(GIT_TAG)
@@ -124,6 +125,9 @@ ENDIF()
 
 # General include directories
 INCLUDE_DIRECTORIES(src/include/ src/include/private)
+if (EXTRA_INCLUDE_DIRECTORIES) 
+    INCLUDE_DIRECTORIES(${EXTRA_INCLUDE_DIRECTORIES})
+endif()
 ADD_SUBDIRECTORY (src)
 
 #-------------------

@@ -23,7 +23,7 @@
 #ifndef SRC_INCLUDE_JWT_MESSAGEVALIDATORFACTORY_H_
 #define SRC_INCLUDE_JWT_MESSAGEVALIDATORFACTORY_H_
 
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "jwt/kidvalidator.h"
 #include "jwt/messagevalidator.h"
 #include <exception>

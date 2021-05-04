@@ -23,7 +23,7 @@
 #ifndef SRC_INCLUDE_JWT_CLAIMVALIDATORFACTORY_H_
 #define SRC_INCLUDE_JWT_CLAIMVALIDATORFACTORY_H_
 
-#include "json.hpp"
+#include <nlohmann/json.hpp>
 #include "jwt/claimvalidator.h"
 #include <exception>
 #include <string>
