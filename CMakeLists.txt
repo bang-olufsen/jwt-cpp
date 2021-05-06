@@ -29,7 +29,7 @@ OPTION(ENABLE_GPERF_TOOLS  "Enable google perftools [default: OFF]" OFF)
 OPTION(ENABLE_COVERAGE     "Enable coder coverage [default: OFF]" OFF)
 OPTION(ENABLE_DOC          "Enable documentation    [default: OFF]" OFF)
 OPTION(ENABLE_TESTS        "Enable tests [default: OFF]" OFF)
-OPTION(BUILD_SHARED_LIBS   "Build all libraries as shared library [default: ON]" ON)
+OPTION(BUILD_SHARED_LIBS   "Build all libraries as shared library [default: OFF]" OFF)
 
 set(JWT_INSTALL_LIB_DIR       lib CACHE PATH "Installation directory for libraries")
 set(JWT_INSTALL_BIN_DIR       bin CACHE PATH "Installation directory for executables")
